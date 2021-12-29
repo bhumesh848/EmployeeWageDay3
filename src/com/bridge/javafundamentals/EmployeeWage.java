@@ -9,7 +9,7 @@ public class EmployeeWage {
 
     public static void main(String[] args) {
         System.out.println("Welcome to Employee wage Computation Program");
-        double random = Math.random() * 3;
+        double random = Math.random() * 2;
         System.out.println("random number generated is : " + random);
          int result = (int) random%2;
         System.out.println("result is :" + result);
