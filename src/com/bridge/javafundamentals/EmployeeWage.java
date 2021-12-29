@@ -6,6 +6,8 @@ import java.lang.Math;
 import static java.lang.Math.random;
 
 public class EmployeeWage {
+    public static final int EMPLOYEE_WAGE_PER_HOUR = 20;
+    public static final int FULL_DAY_HOUR = 8;
 
     public static void main(String[] args) {
         System.out.println("Welcome to Employee wage Computation Program");
@@ -18,6 +20,9 @@ public class EmployeeWage {
          else{
              System.out.println("Employee is absent");
          }
+        int dailyWage = EMPLOYEE_WAGE_PER_HOUR * FULL_DAY_HOUR;
+                System.out.println("Daily employee wage is :" + dailyWage);
+
     }
 }
 
