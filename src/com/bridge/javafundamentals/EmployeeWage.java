@@ -13,7 +13,7 @@ public class EmployeeWage {
         System.out.println("random number generated is : " + random);
          int result = (int) random%2;
         System.out.println("result is :" + result);
-         if (result==1)
+           if (result==1)
              System.out.println("Employee is present");
          else{
              System.out.println("Employee is absent");
