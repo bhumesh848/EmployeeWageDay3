@@ -1,6 +1,5 @@
 package com.bridge.javafundamentals;
 
-
 import java.lang.Math;
 import java.util.Scanner;
 
@@ -24,11 +23,13 @@ public class EmployeeWage {
         UC2();
         UC3();
         UC4();
+        UC5();
     }
 
-    private static void UC2() {
+    private static int UC2() {
         int dailyWage = EMPLOYEE_WAGE_PER_HOUR * FULL_DAY_HOUR;
         System.out.println("Daily employee wage is :" + dailyWage);
+        return dailyWage;
     }
 
     static void UC3() {
@@ -40,7 +41,6 @@ public class EmployeeWage {
         System.out.println("Total part time Wage: " + partTimeEmployee.totalWage);
 
     }
-
 
     static void UC4() {
         System.out.println("Press 1 to see Daily employee wage / Full time Wage ");
@@ -58,6 +58,12 @@ public class EmployeeWage {
             default:
                 System.out.println("Invalid Input");
         }
+    }
+
+    static void UC5(){
+        int workingDaysOfMonth = 20;
+        int Wageformonth = workingDaysOfMonth * UC2();
+        System.out.println("Employee wage for a month is:"+ Wageformonth);
     }
 }
 
